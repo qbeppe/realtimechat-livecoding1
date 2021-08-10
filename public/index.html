@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>DevelopersLife - Live Coding 1</title>
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+    Welcome to the index.html
+    <!-- container 01
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    -->
+    <!-- container 02 -->
+    <div class="container-fluid">
+      <h3>DevelopersLife Chat - LiveCoding1</h3>
+      <div class="row">
+        <div class="col-sm">
+          <button id="loginButton" onclick="userLogin()" class="btn btn-success">LOGIN</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+    <!-- input 01
+          <input type="text" />
+    -->
+    <!-- input 02    -->
+          <div class="input-group mb-3">
+            <input disabled="" id="nickname" placeholder="Nickname" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+    <!-- tolta la label
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+            </div>
+    -->
+    <!-- * 00.00 aggiunto placeholder="" -->
+    <!-- * 01.01 aggiunto id="" -->
+            <input id="boxTesto" placeholder="Scrivi il tuo messaggio" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+    <!-- button 01
+          <button>Invia</button>
+    -->
+    <!-- button 02    -->
+    <!-- * 01.00 aggiunto onclick="inviaMessaggio()" -->
+          <button onclick="inviaMessaggio()" type="button" class="btn btn-primary">Invia</button>
+        </div>
+        <div class="col-sm">
+          <ul id="listaMessaggi" class="list-group">
+    <!--
+            <li class="list-group-item">msgf 00</li>
+            <li class="list-group-item">msgf 01</li>
+    -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Aggancio FireBase    -->
+    <!-- The core Firebase JS SDK is always required and must be listed first
+                          <script src="/__/firebase/8.9.0/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- Autenticazione    -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <!-- Initialize Firebase -->
+    <!-- Inizializzazione evasa da chat.js
+    <script src="/__/firebase/init.js"></script>    -->
+
+    <!--     -->
+    <script src="chat.js"></script>
+  </body>
+</html>
