@@ -1,7 +1,10 @@
 //alert("ciao");
 
-// Your web app's Firebase configuration
-// TODO: Inserire qui le configurazioni di Firebase.
+// Your web app's Firebase configuration.
+/* TODO: Inserire qui le configurazioni di Firebase.
+    Dalla pagina del progetto su Firebase, le impostazioni si trovano sotto "SDK setup and configuration".
+    Utilizzata qui la modalità CDN : Load Firebase JavaScript SDK libraries from the CDN (content delivery network).
+*/
 var firebaseConfig = {
   apiKey: "",
   authDomain: "",
@@ -80,10 +83,10 @@ const userLogin = function() {
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
     // ...
-    console.log(`>>> userLogin() 
-      eCode:${errorCode} 
-      eMsg:${errorMessage} 
-      eMail${email} 
+    console.log(`>>> userLogin()
+      eCode:${errorCode}
+      eMsg:${errorMessage}
+      eMail${email}
       eCred${credential}`)
   });
 }
