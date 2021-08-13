@@ -1,22 +1,9 @@
 //alert("ciao");
 
-// Your web app's Firebase configuration.
-/* TODO: Inserire qui le configurazioni di Firebase.
-    Dalla pagina del progetto su Firebase, le impostazioni si trovano sotto "SDK setup and configuration".
-    Utilizzata qui la modalità CDN : Load Firebase JavaScript SDK libraries from the CDN (content delivery network).
-*/
-var firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
-};
 var user = null;
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase.
+// > Your web app's Firebase configuration in firebaseConfig().
+firebase.initializeApp(firebaseConfig());
 
 // Get a reference to the database service
 //var database = firebase.database();
